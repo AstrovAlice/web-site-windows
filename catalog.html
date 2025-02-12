@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>каталог</title>
+    
+    <link rel="stylesheet" href="data/style/catalog/list.css">
+    <link rel="stylesheet" href="data/style/catalog/catalog.css">
+</head>
+<body>
+    <header>
+        <div class="home-button">домой</div>
+        <div class="ya-hz-kak-korzona-budet">
+            <p id="selected-items">Пусто</p>
+            <img src="data/svg/basket.svg" alt="basket">
+        </div>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Поиск по названию..." oninput="filterProducts()">
+            <select id="colorFilter" onchange="filterProducts()">
+                <option value="">Все цвета</option>
+                <option value="Красный">Красный</option>
+                <option value="Синий">Синий</option>
+                <option value="Зеленый">Зеленый</option>
+            </select>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Каталог</h1>
+
+        <div class="grid-container" id="products"></div>
+        <script src="data/js/catalog/list.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "name",
+        "color": "red",
+        "image": "img.jpg"
+    },
+    {
+        "id": 2,
+        "name": "name",
+        "color": "red",
+        "image": "img.jpg"
+    }
+]

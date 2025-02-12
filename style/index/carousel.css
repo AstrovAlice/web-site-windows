@@ -1,0 +1,50 @@
+.carousel {
+    display: flex;
+    justify-self: center;
+    position: relative;
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    /* background: none; */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-button-radius{
+    border-radius: 0 15px 15px 0;
+}
+
+.right-button-radius{
+    border-radius: 15px 0 0 15px;
+}
+
+.carousel-buttons button:hover {
+    background: rgba(255, 119, 0, 0.5);
+}
