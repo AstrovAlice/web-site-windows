@@ -3,12 +3,12 @@
         "id": 1,
         "name": "name",
         "color": "red",
-        "image": "img.jpg"
+        "image": "img-1.jpg"
     },
     {
         "id": 2,
         "name": "name",
         "color": "red",
-        "image": "img.jpg"
+        "image": "img-2.jpg"
     }
 ]
