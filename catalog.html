@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>каталог</title>
-    
-    <link rel="stylesheet" href="data/style/catalog/list.css">
-    <link rel="stylesheet" href="data/style/catalog/catalog.css">
+    <title>My Summer Site</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/my_suummer_site.png">
+
+    <script src="script/header.js"></script>
+    <script src="script/scroll.js"></script>
+    <script src="script/catalog.js"></script>
+
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/search.css">
+    <link rel="stylesheet" href="style/catalog.css">
 </head>
 <body>
-    <header>
-        <div class="home-button">домой</div>
-        <div class="ya-hz-kak-korzona-budet">
-            <p id="selected-items">Пусто</p>
-            <img src="data/svg/basket.svg" alt="basket">
-        </div>
-        <div class="controls">
-            <input type="text" id="search" placeholder="Поиск по названию..." oninput="filterProducts()">
-            <select id="colorFilter" onchange="filterProducts()">
-                <option value="">Все цвета</option>
-                <option value="Красный">Красный</option>
-                <option value="Синий">Синий</option>
-                <option value="Зеленый">Зеленый</option>
-            </select>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/my_suummer_site.png" class="summer-image">
+                <a href="index.html" style="text-decoration: none">
+                    <div class="logo">My summer site</div>
+                </a>
+                <div class="search-wrapper">
+                    <div class="search-container">
+                      <button class="search-button" id="searchButton">wiki</button>
+                      <input type="text" class="search-input" id="searchInput" placeholder="Введите запрос...">
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a class="other-page" href="satsuma.html">Satsuma</a>
+                <a class="other-page" href="tutorial.html">Гайд</a>
+                <a class="other-page" href="catalog.html">Каталог</a>
+                <a class="other-page" href="map.html">Карта</a>
+            </nav>
         </div>
     </header>
-    <div class="container">
-        <h1>Каталог</h1>
-
-        <div class="grid-container" id="products"></div>
-        <script src="data/js/catalog/list.js"></script>
+    
+    
+    <div class="content">
+        <div class="part-search-container">
+        <div class="part-search-box">
+            <input type="text" id="partSearchInput" placeholder="Введите название детали...">
+        </div>
+        </div>
+        <div id="partsGrid"></div>
     </div>
+    <button class="scroll-top-btn" id="scrollTopBtn" title="Наверх">↑</button>
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="https://vogu35.ru/">ВоГУ</a>
+        </div>
+        <div class="footer-center">
+            <p>© 2025 My Summer Car Inspired Site</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://pm.vogu35.ru/">Кафедра ПМ</a>
+        </div>
+    </footer>
 </body>
 </html>

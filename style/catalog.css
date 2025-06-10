@@ -1,0 +1,65 @@
+.part-search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+  
+.part-search-box {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+}
+  
+#partSearchInput {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+#partsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+  
+.part-card {
+  background-color: #4d4d4d;
+  padding: 15px;
+  border-radius: 15px;
+  transition: transform 0.2s;
+}
+  
+.part-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+  
+.part-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  background: #4d4d4d;
+  /* background: #174971; */
+  padding: 10px;
+  border-radius: 3px;
+}
+  
+.part-card h3 {
+  margin-top: 0;
+  color: #b7b7b7;
+}
+  
+.part-info {
+  font-size: 14px;
+}
+  
+.description {
+  color: #666;
+  font-style: italic;
+}

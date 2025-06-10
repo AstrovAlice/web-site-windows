@@ -1,0 +1,46 @@
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.car-image {
+    width: 60%;
+    max-height: 500px;
+}
+
+.jurnal-img{
+    width: 30%;
+    height: auto; 
+    margin: 20px 0;
+}
+
+.specs {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.specs table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs th, .specs td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.specs th {
+    background-color: #4d4d4d;
+}
+
+.text{
+    margin: 20px;
+}

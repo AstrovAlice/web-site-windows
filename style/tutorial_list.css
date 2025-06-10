@@ -1,0 +1,35 @@
+.local {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #fff;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text {
+    margin-right: 20px;
+    max-width: calc(100% - 170px);
+}
+
+.text h3 {
+    margin-top: 0;
+    color: #4dabf7;
+}
+
+.bolts{
+    color: #FFC107;
+}
+
+.warning{
+    color: brown;
+}
